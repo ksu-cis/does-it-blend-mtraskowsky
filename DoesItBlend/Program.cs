@@ -21,12 +21,14 @@ namespace DoesItBlend
 
             List<IBlendable> fruits = new List<IBlendable>() { b, s , m, c, p };
 
-            foreach(var fruit in fruits)
+            foreach(dynamic fruit in fruits)
             {
                 Console.WriteLine(fruit.GetType());
                 Console.WriteLine(fruit.Blend());
             }
 
+            // when would we use an interface over an abstract class?
+            // 
         }
     }
 }
